@@ -1,8 +1,8 @@
 
   $(document).ready(function () {
     $('.menuContainer').load('templates/navbar.html');
+    $('.acercaContainer').load('templates/acerca_de_mi.html');
     $('.footerContainer').load('templates/footer.html');
-    $('.bodyContainer').load('templates/body.html');
   });
   
   document.querySelector(".menu-btn").addEventListener("click", () => {
