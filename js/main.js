@@ -2,6 +2,8 @@
   $(document).ready(function () {
     $('.menuContainer').load('templates/navbar.html');
     $('.acercaContainer').load('templates/acerca_de_mi.html');
+    $('.experienciaContainer').load('templates/experiencia.html');
+    $('.portafolioContainer').load('templates/portafolio.html');
     $('.footerContainer').load('templates/footer.html');
   });
   

@@ -11,12 +11,12 @@
     /* Pattern from https://www.heropatterns.com/ */
     /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");*/
     color: #1e272e;
-    color: #000 !important;
+    color: #ccc !important;
     font-size: 16px !important;
   }
   
   a {
-    color: #000000 !important;
+    color: #ccc !important;
     text-decoration: none !important;
   }
   
@@ -28,6 +28,8 @@
   .container {
     width: 90% !important;
     margin: auto !important;
+    background-color: #222222;
+    padding: 0;
   }
   
   /* Navigation */
@@ -44,14 +46,26 @@
     letter-spacing: 4px;
     font-size: 40px;
     padding-top: 10px;
+    padding-left: 20px;
   }
-  @media (max-width: 700px){
+  @media (max-width: 768px){
     .nav-main h1{
       font-family: 'Brush Script MT', cursive;
       letter-spacing: 4px;
       font-size: 26px;
-      padding-top: 10px;
-      padding-right: 100px;
+      padding-top: 34px;
+      padding-left: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  @media (max-width: 375px){
+    .nav-main h1 {
+        font-family: 'Brush Script MT', cursive;
+        letter-spacing: 4px;
+        font-size: 30px;
+        padding-top: 34px;
+        padding-left: 15px;
+        padding-bottom: 15px;
     }
   }
   .nav-brand {
@@ -75,7 +89,7 @@
   }
 
   .nav-main ul li a:hover {
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #ccc;
   }
   
   .nav-main ul.nav-menu {
@@ -145,6 +159,32 @@
     margin-top: 20px;
   }
   
+  /*Containers*/
+  .acercaContainer{
+    padding: 20px;
+    background-color: #514d4d;
+  }
+  .experienciaContainer{
+    padding: 20px;
+  }
+  .portafolioContainer{
+    padding: 20px;
+    background-color: #514d4d;
+  }
+
+  /*Portafolio*/
+  .titulo-proyecto-portafolio{
+    text-align: right;
+  }
+  .img-portafolio{
+    width: 85px;
+  }
+  @media(max-width: 700px){
+    .titulo-proyecto-portafolio{
+      text-align: center;
+    }
+  }
+
   /* News Cards */
   .news-cards {
     display: grid;
