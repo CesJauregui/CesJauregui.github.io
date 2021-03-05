@@ -33,49 +33,63 @@
   }
   
   /* Navigation */
-  .nav-main {
+  .title-h1{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.8rem;
+    padding-top: 10px;
+    padding-left: 144px;
+  }
+  .bg-dark{
+    background-color: #222222 !important;
+  }
+  .navbar-dark .navbar-toggler {
+    color: rgb(30 20 20 / 55%) !important;
+  }
+  
+  @media(max-width:500px){
+    span.title-h1{
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2.2rem;
+      display: block;
+      visibility: visible;
+      padding-top: 10px;
+      padding-left: 5px;
+    }
+  }
+  @media(max-width:320px){
+    span.title-h1{
+      font-family: 'Brush Script MT', cursive;
+      font-size: 1.8rem;
+      display: block;
+      visibility: visible;
+      padding-top: 10px;
+      padding-left: 5px;
+    }
+  }
+  
+  /*.nav-main {
     font-size: 17px !important;
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
     height: 60px !important;
     padding: 20px 0 !important;
-  }
-  .nav-main h1{
-    font-family: 'Brush Script MT', cursive;
-    letter-spacing: 4px;
-    font-size: 40px;
-    padding-top: 10px;
-    padding-left: 20px;
-  }
-  @media (max-width: 768px){
-    .nav-main h1{
-      font-family: 'Brush Script MT', cursive;
-      letter-spacing: 4px;
-      font-size: 26px;
-      padding-top: 34px;
-      padding-left: 15px;
-      padding-bottom: 15px;
-    }
-  }
-  @media (max-width: 375px){
-    .nav-main h1 {
-        font-family: 'Brush Script MT', cursive;
-        letter-spacing: 4px;
-        font-size: 30px;
-        padding-top: 34px;
-        padding-left: 15px;
-        padding-bottom: 15px;
-    }
-  }
+  }*/
+  
   .nav-brand {
     width: 50px;
     border-radius: 50%;
     margin-top: 10px;
   }
-  
+  .navbar{
+    padding-bottom: 0 !important;
+  }
+  .nav-link:hover {
+    display: flex !important;
+    border-bottom: 2px solid #ccc;
+  }
   /* Navbar Left */
-  .nav-main ul {
+  /* .nav-main ul {
     display: flex;
   }
   
@@ -94,8 +108,8 @@
   
   .nav-main ul.nav-menu {
     flex: 0;
-    /*margin-left: 20px;*/
-  }
+    /*margin-left: 20px;
+  }*/
   
   .line-hr {
     margin: 10px 0 !important;
@@ -130,8 +144,11 @@
   
   .btn:hover {
     opacity: 0.9;
+    background-color: #fff;
+    color: #222222;
+    border: 1px solid #fff;
   }
-  
+
   .showcase {
     width: 100%;
     height: 550px;
@@ -170,6 +187,9 @@
   .portafolioContainer{
     padding: 20px;
     background-color: #514d4d;
+  }
+  .contactoContainer{
+    padding: 20px;
   }
 
   /*Portafolio*/
@@ -264,7 +284,12 @@
   .links a i {
     font-size: 3rem;
   }
-  
+  @media (max-width:375px){
+    .links a , .links a i{
+      margin: 0 10px;
+      font-size: 2.5rem;
+    }
+  }
   /* Links */
   .footer-links {
     background: #2f3640;
@@ -293,7 +318,7 @@
     background: #2f3640 !important;
     color: #616161 !important;
     font-size: 12px !important;
-    padding: 20px 0 !important;
+    padding: 1px 0 !important;
     text-align: center !important;
     font-size: 1rem !important;
     padding-bottom: 20px !important;
@@ -359,7 +384,32 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  
+  .google-maps {
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+  }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+  }
+  @media(max-width:768px){
+    .google-maps {
+      position: relative;
+      padding-bottom: 100%;
+      height: 0;
+      overflow: hidden;
+    }
+    .google-maps iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+    }
+  }
   @media (max-width: 500px) {
     .news-cards {
       grid-template-columns: 1fr;
@@ -384,4 +434,15 @@
     margin-top: 70px !important;
     margin-bottom: auto !important;
   }
+  }
+  .ir-arriba {
+    display:none;
+    padding: 6px;
+    background:#222222;
+    color:#fff;
+    cursor:pointer;
+    border-radius: 50%;
+    position: fixed;
+    bottom:20px;
+    right:20px;
   }
